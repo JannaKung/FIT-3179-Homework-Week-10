@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.5.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.21.0"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div id="title-bar">How Does Australia's Energy Generation Compare to the Rest of the World</div>
+
+  <!-- Container to hold the map -->
+  <div id="vis"></div>
+
+  <script type="text/javascript">
+    // Function to ensure that the map is responsive to user's window
+    function drawMap() {
+      const width = Math.min(window.innerWidth * 0.8, 1200);  // 80% width or max 1200px
+      const height = Math.min(window.innerHeight * 0.6, 600);  // 60% height or max 600px
+
+      // Embed the Vega-Lite specification from an external JSON file
+      vegaEmbed('#vis', 'js/choropleth_map.vg.json', {
+        "width": width,
+        "height": height
+      }).then(console.log).catch(console.error);
+    }
+
+    // Call the function initially and whenever the window is resized
+    window.addEventListener('resize', drawMap);
+    drawMap();  // Initial call
+  </script>
+
+</body>
+</html>
