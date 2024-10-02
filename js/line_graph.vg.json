@@ -1,5 +1,8 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Australia's Total Energy Consumption Overview (2011-2022)",
+    "width": 350,
+    "height":300,
     "description": "Australia's Total Energy Consumption Overview",
     "data": {
       "url": "https://raw.githubusercontent.com/JannaKung/FIT-3179-Homework-Week-10/refs/heads/main/data/End_use_of_industries.csv",
