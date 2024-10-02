@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "Tracking Australia's Energy Generation Per Capita: A Global Comparison from 2011 to 2022",
   "width": 800,
-  "height": 500,
+  "height":350,
   "params": [
     {
       "name": "Year_selection",

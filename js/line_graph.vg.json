@@ -1,0 +1,10 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Australia's Total Energy Consumption Overview",
+    "data": {"url": ""},
+    "mark": "line",
+    "encoding": {
+      "x": {"field": "Year", "type": "temporal"},
+      "y": {"field": "Industry Use (PJ)", "type": "quantitative"}
+    }
+  }
