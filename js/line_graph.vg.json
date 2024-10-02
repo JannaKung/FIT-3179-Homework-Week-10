@@ -1,12 +1,23 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "description": "Australia's Total Energy Consumption Overview",
-    "data": {"url": ""},
-
+    "data": {
+      "url": "https://raw.githubusercontent.com/JannaKung/FIT-3179-Homework-Week-10/refs/heads/main/data/End_use_of_industries.csv",
+      "format": {"type": "csv"}
+    },
     "mark": "line",
     "encoding": {
-      "x": {"field": "Year", "type": "temporal"},
-      "y": {"field": "Energy Consumption (PJ)", "type": "quantitative"},
-      "color": {"field": "Energy Consumption Sectors", "type": "nominal"}
+      "x": {
+        "field": "Year",
+        "type": "temporal"
+      },
+      "y": {
+        "field": "Energy Consumption (PJ)",
+        "type": "quantitative"
+      },
+      "color": {
+        "field": "Energy Consumption Sectors",
+        "type": "nominal"
+      }
     }
   }
