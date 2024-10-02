@@ -1,13 +1,49 @@
-Year,Industry use (PJ),Household use (PJ),Energy exports (PJ),Total energy use (PJ)
-2011,"3,108","1,025","13,140","19,704"
-2012,"3,175","1,015","13,583","20,260"
-2013,"3,249","1,025","15,422","21,977"
-2014,"3,226","1,005","15,618","21,221"
-2015,"3,132","1,020","15,692","21,843"
-2016,"3,158","1,005","17,575","22,849"
-2017,"3,209","1,026","17,456","23,325"
-2018,"3,277","1,025","18,209","24,771"
-2019,"3,327","1,016","19,467","25,878"
-2020,"3,298",985,"19,603","25,667"
-2021,"3,157",950,"18,215","23,861"
-2022,"3,232",913,"17,834","22,914"
+﻿Energy Consumption Sectors,Year,Energy Consumption (PJ)
+Energy exports,2011,13140
+Household use,2011,1025
+Industry use,2011,3108
+Total energy use,2011,19704
+Energy exports,2012,13583
+Household use,2012,1015
+Industry use,2012,3175
+Total energy use,2012,20260
+Energy exports,2013,15422
+Household use,2013,1025
+Industry use,2013,3249
+Total energy use,2013,21977
+Energy exports,2014,15618
+Household use,2014,1005
+Industry use,2014,3226
+Total energy use,2014,21221
+Energy exports,2015,15692
+Household use,2015,1020
+Industry use,2015,3132
+Total energy use,2015,21843
+Energy exports,2016,17575
+Household use,2016,1005
+Industry use,2016,3158
+Total energy use,2016,22849
+Energy exports,2017,17456
+Household use,2017,1026
+Industry use,2017,3209
+Total energy use,2017,23325
+Energy exports,2018,18209
+Household use,2018,1025
+Industry use,2018,3277
+Total energy use,2018,24771
+Energy exports,2019,19467
+Household use,2019,1016
+Industry use,2019,3327
+Total energy use,2019,25878
+Energy exports,2020,19603
+Household use,2020,985
+Industry use,2020,3298
+Total energy use,2020,25667
+Energy exports,2021,18215
+Household use,2021,950
+Industry use,2021,3157
+Total energy use,2021,23861
+Energy exports,2022,17834
+Household use,2022,913
+Industry use,2022,3232
+Total energy use,2022,22914
