@@ -30,7 +30,7 @@
     }
   ],
   "data": {
-    "url": "https://raw.githubusercontent.com/JannaKung/FIT-3179-Homework-Week-9/main/js/ne_110m_admin_0_countries.topojson",
+    "url": "https://raw.githubusercontent.com/JannaKung/FIT-3179-Homework-Week-10/refs/heads/main/js/ne_110m_admin_0_countries.topojson",
     "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
   },
   "projection": {"type": "equalEarth"},
@@ -46,21 +46,21 @@
     },
     {
       "data": {
-        "url": "https://raw.githubusercontent.com/JannaKung/FIT-3179-Homework-Week-9/main/js/oceans.topojson",
+        "url": "https://raw.githubusercontent.com/JannaKung/FIT-3179-Homework-Week-10/refs/heads/main/js/oceans.topojson",
         "format": {"type": "topojson", "feature": "oceans"}
       },
       "mark": {"type": "geoshape", "fill": "#cfecf7"}
     },
     {
       "data": {
-        "url": "https://raw.githubusercontent.com/JannaKung/FIT-3179-Homework-Week-9/main/js/WorldMapWithGraticules.topojson",
+        "url": "https://raw.githubusercontent.com/JannaKung/FIT-3179-Homework-Week-10/refs/heads/main/js/WorldMapWithGraticules.topojson",
         "format": {"type": "topojson", "feature": "ne_110m_graticules_30"}
       },
       "mark": {"type": "geoshape", "fill": null, "stroke": "lightgray"}
     },
     {
       "data": {
-        "url": "https://raw.githubusercontent.com/JannaKung/FIT-3179-Homework-Week-9/refs/heads/main/data/energy-per-country-multiple.csv",
+        "url": "https://raw.githubusercontent.com/JannaKung/FIT-3179-Homework-Week-10/refs/heads/main/data/energy-per-country-multiple.csv",
         "format": {"type": "csv"}
       },
       "transform": [
@@ -68,7 +68,7 @@
           "lookup": "Country",
           "from": {
             "data": {
-              "url": "https://raw.githubusercontent.com/JannaKung/FIT-3179-Homework-Week-9/main/js/ne_110m_admin_0_countries.topojson",
+              "url": "https://raw.githubusercontent.com/JannaKung/FIT-3179-Homework-Week-10/refs/heads/main/js/ne_110m_admin_0_countries.topojson",
               "format": {
                 "type": "topojson",
                 "feature": "ne_110m_admin_0_countries"
@@ -108,7 +108,7 @@
           "lookup": "properties.NAME",
           "from": {
             "data": {
-              "url": "https://raw.githubusercontent.com/JannaKung/FIT-3179-Homework-Week-9/main/data/countryInfo.csv"
+              "url": "https://raw.githubusercontent.com/JannaKung/FIT-3179-Homework-Week-10/refs/heads/main/data/countryInfo.csv"
             },
             "key": "name",
             "fields": ["latitude", "longitude"]
