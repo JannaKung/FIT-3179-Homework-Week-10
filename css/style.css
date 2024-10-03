@@ -1,9 +1,21 @@
-body *{
-  font-family: 'Open Sans', sans-serif;
+body * {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 h1 {
-  font-weight: 900;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
 body {
@@ -29,6 +41,9 @@ body {
   margin-top: 0px;
 }
 
+#map-container {
+  margin-bottom: 20px;
+}
 
 .description h2,
 h1 {
@@ -44,44 +59,21 @@ h1 {
 }
 
 .pure-g {
-  margin-bottom: 20px
+  margin-bottom: 20px; /* Increase the margin to add more space between containers */
 }
 
 .small-font {
   font-size: 14px;
 }
 
+.pure-u-1-2 {
+  box-sizing: border-box;
+  padding: 40px; /* Increase padding for more spacing */
+}
 
-/* Reset body and html margins to 0 to allow full screen
+/* Reset body and html margins to 0 to allow full screen */
 body, html {
   margin: 0;
   padding: 0;
   height: 100%;
 }
-
-/* Title bar styling */
-/* #title-bar {
-  background-color: #003366;
-  color: #ffffff;
-  text-align: center;
-  font-size: 24px;
-  font-weight: bold;
-  padding: 10px;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 100;
-}  */
-
-/* Container to hold the map full screen and center the content */
-/* #vis {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 50px;
-  width: 100%;
-  height: calc(100% - 50px); /* Adjust height to account for title bar */
-
-
-

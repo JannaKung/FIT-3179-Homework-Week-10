@@ -1,6 +1,19 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "Tracking Australia's Energy Generation Per Capita: A Global Comparison from 2011 to 2022",
+  "config": {
+    "title":{
+      "font":"Poppins"
+    },
+    "axis": {
+      "titleFont": "Poppins",
+      "labelFont": "Poppins"
+    },
+    "legend": {
+      "titleFont": "Poppins",
+      "labelFont":"Poppins"
+    }
+  },
   "width": 800,
   "height":350,
   "params": [
@@ -102,7 +115,7 @@
           }
         }
       ],
-      "mark": {"type": "text"},
+      "mark": {"type": "text","font":"Poppins","fontWeight":"bold"},
       "encoding": {
         "longitude": {"field": "longitude", "type": "quantitative"},
         "latitude": {"field": "latitude", "type": "quantitative"},

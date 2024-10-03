@@ -1,0 +1,82 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Australia's Total Energy Consumption Overview (2011-2022)",
+  "config": {
+    "title":{
+      "font":"Poppins"
+    },
+    "axis": {
+      "titleFont": "Poppins",
+      "labelFont": "Poppins"
+    },
+    "legend": {
+      "titleFont": "Poppins",
+      "labelFont":"Poppins"
+    }
+  },
+  "width": 300,
+  "height": 250,
+  "description": "Australia's Total Energy Consumption Overview",
+  "data": {
+    "url": "https://raw.githubusercontent.com/JannaKung/FIT-3179-Homework-Week-10/refs/heads/main/data/End_use_of_industries.csv",
+    "format": {"type": "csv"}
+  },
+  "params": [
+    {
+      "name": "Sector_selection",
+      "value": "All",
+      "bind": {
+        "input": "select",
+        "options": ["All", "Energy exports", "Household use", "Industry use", "Total energy use"],
+        "name": "Select Sector: "
+      }
+    }
+  ],
+  "transform": [
+    {
+      "filter": "Sector_selection == 'All' || datum['Energy Consumption Sectors'] == Sector_selection"
+    }
+  ],
+  "mark": {
+    "type": "bar",
+    "tooltip": true
+  },
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "ordinal",
+      "timeUnit": "year",
+      "title": "Year"
+    },
+    "y": {
+      "aggregate": "sum",
+      "field": "Energy Consumption (PJ)",
+      "type": "quantitative",
+      "title": "Total Energy Consumption (PJ)"
+    },
+    "color": {
+  "condition": {
+    "param": "Sector_selection",
+    "field": "Energy Consumption Sectors",
+    "type": "nominal",
+    "title": "Sector",
+    "scale": {
+      "domain": ["Energy exports", "Household use", "Industry use", "Total energy use"],
+      "range": ["#95E1D3", "#d0bdf4", "#ffa8B6", "#F38181"]
+    }
+  },
+  "value": "lightgray"
+},
+    "tooltip": [
+      {"field": "Year", "type": "ordinal", "timeUnit": "year", "title": "Year"},
+      {"field": "Energy Consumption Sectors", "type": "nominal", "title": "Sector"},
+      {
+        "aggregate": "sum",
+        "field": "Energy Consumption (PJ)",
+        "type": "quantitative",
+        "title": "Total Energy Consumption (PJ)"
+      }
+    ]
+  }
+}
+
